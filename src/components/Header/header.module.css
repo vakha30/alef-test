@@ -1,0 +1,24 @@
+.header {
+  display: flex;
+  padding: 25px 50px;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0px 1px 0px rgba(17, 17, 17, 0.1);
+  margin-bottom: 30px;
+}
+
+.hiden {
+  width: 200px;
+  height: 30px;
+}
+
+.menu a {
+  margin: 0 15px;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(17, 17, 17, 0.48);
+}
+
+.menu a.active {
+  text-decoration: underline;
+}

@@ -1,0 +1,88 @@
+button {
+  padding: 10px 20px 10px 20px;
+  border-radius: 100px;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button img {
+  margin-right: 7px;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.default {
+  background: #01a7fd;
+  color: #fff;
+}
+
+.addVariant {
+  background-color: transparent;
+  border: 2px solid #01a7fd;
+  color: #01a7fd;
+}
+
+.addVariant:hover {
+  box-shadow: -1px -1px 0.2px 0px #01a7fd;
+  transform: translateY(1px);
+}
+
+.primary {
+  background-color: #1890ff;
+  border: 1px solid #1890ff;
+  color: antiquewhite;
+  position: relative;
+}
+
+.arrow {
+  padding-left: 35px;
+  position: relative;
+}
+
+.arrow::before,
+.arrow::after {
+  content: "";
+  display: block;
+  width: 8px;
+  height: 2px;
+  background-color: #fff;
+  position: absolute;
+  top: 11.5px;
+  left: 15px;
+  transform-origin: right;
+}
+
+.arrow::before {
+  transform: rotate(-35deg);
+}
+
+.arrow::after {
+  transform: rotate(35deg);
+}
+
+.danger {
+  background-color: #ff4d4f;
+  color: antiquewhite;
+  border: none;
+}
+
+button.addVariant:disabled,
+button.addVariant[disabled] {
+  cursor: not-allowed;
+  border: 1px solid #999999;
+  background-color: #cccccc;
+  color: #666666;
+  opacity: 0.5;
+}
+
+button.addVariant:disabled:hover,
+button.addVariant[disabled]:hover {
+  box-shadow: none;
+  transform: none;
+}

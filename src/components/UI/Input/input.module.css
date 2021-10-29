@@ -1,0 +1,30 @@
+.input {
+  position: relative;
+}
+
+.input input {
+  border: none;
+  border: gray solid 1px;
+  background: transparent;
+  width: 100%;
+  padding: 23px 15px 10px;
+  transition: 0.1s;
+  border-radius: 4px;
+  opacity: 0.7;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.input:focus {
+  outline: none;
+  transform: scale(1.01);
+}
+
+.input label {
+  color: rgba(17, 17, 17, 0.48);
+  font-size: 13px;
+  line-height: 16px;
+  position: absolute;
+  top: 8px;
+  left: 16px;
+}
